@@ -1,0 +1,117 @@
+body {
+  margin: 0 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #2c1f12;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.text-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  min-width: 300px;
+  max-width: 675px;
+  width: 100%;
+  flex: 0 1 auto;
+  background-color: transparent;
+  border: 1px solid #48351b;
+}
+.text-input:focus {
+  outline: none;
+  border-color: #80653a;
+  color: white;
+}
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.add-btn {
+  padding: 10px 30px;
+  background-color: #48351b;
+  color: white;
+}
+.input-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+li {
+  background-color: #362b14;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+li input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: #744c0d;
+}
+li button {
+  background-color: #744c0d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  font-weight: 700;
+}
+
+.footer-actions {
+  display: flex;
+  flex-direction: column; /* Stack social and button */
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.footer-socials a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+@media (max-width: 480px) {
+  .input-container {
+    margin: 0px 10px 0;
+  }
+  .add-btn {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    min-width: 30%;
+  }
+  .text-input {
+    margin: 0 0 10px 0;
+    min-width: 60%;
+  }
+  ul {
+    margin: 10px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
